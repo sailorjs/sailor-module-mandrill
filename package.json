@@ -1,0 +1,42 @@
+{
+  "name": "sailor-module-mandrill",
+  "description": "Integrate with Mandrill API",
+  "version": "0.0.0",
+  "author": {
+    "name": "Kiko Beats",
+    "email": "josefrancisco.verdu@gmail.com",
+    "url": "https://github.com/Kikobeats"
+  },
+  "dependencies": {
+    "coffee-script": "*",
+    "mailchimp": "*",
+    "sailor-errorify": "git://github.com/sailorjs/sailor-errorify",
+    "sailor-translate": "git://github.com/sailorjs/sailor-translate",
+    "sailor-validator": "git://github.com/sailorjs/sailor-validator"
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-watch": "*",
+    "load-grunt-tasks": "*",
+    "mocha": "*",
+    "should": "*",
+    "superagent": "*",
+    "sailor-scripts": "git://github.com/sailorjs/sailor-scripts",
+    "grunt-translate-compile": "git://github.com/sailorjs/translate-compile"
+  },
+  "engines": {},
+  "homepage": "",
+  "keywords": [
+    "sailor",
+    "module"
+  ],
+  "license": "MIT",
+  "main": "",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/sailorjs/sailor-module-mandrill.git"
+  },
+  "scripts": {
+    "test": "sh test/test.sh"
+  }
+}
