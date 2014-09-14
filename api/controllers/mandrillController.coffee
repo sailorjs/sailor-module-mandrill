@@ -20,6 +20,6 @@ module.exports =
     delete params.action
     delete params.method
 
-    mandrillService.api method, action, params, (err, response) ->
+    MandrillService.api method, action, params, (err, response) ->
       return res.badRequest(err) if err
       res.ok(response)
