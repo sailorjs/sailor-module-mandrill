@@ -15,7 +15,7 @@ run() {
   --compilers coffee:coffee-script/register \
   --require should \
   --reporter spec \
-  --timeout 120000ms \
+  --timeout 120000 \
   --slow 300 \
   "$@"
 }
