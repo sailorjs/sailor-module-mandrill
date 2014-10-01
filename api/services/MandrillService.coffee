@@ -1,12 +1,13 @@
 ## -- Dependencies -------------------------------------------------------------
 
-translate       = require 'sailor-translate'
-errorify        = require 'sailor-errorify'
-MailChimp       = require 'mailchimp'
-mandrillConfig  = sails.config.mandrill
+sailor         = require 'sailorjs'
+translate      = sailor.translate
+errorify       = sailor.errorify
+MailChimp      = require 'mailchimp'
+mandrillConfig = sails.config.mandrill
 
-Mandrill_API = MailChimp.MandrillAPI
-Mandrill     = new Mandrill_API(mandrillConfig.key, { version : mandrillConfig.api.version, secure: mandrillConfig.api.secure })
+Mandrill_API   = MailChimp.MandrillAPI
+Mandrill       = new Mandrill_API(mandrillConfig.key, { version : mandrillConfig.api.version, secure: mandrillConfig.api.secure })
 
 ## -- Exports ------------------------------------------------------------------
 
